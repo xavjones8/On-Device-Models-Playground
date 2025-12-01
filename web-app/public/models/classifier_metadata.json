@@ -1,0 +1,81 @@
+{
+  "task_type_map": {
+    "0": "Brainstorming",
+    "1": "Chatbot",
+    "2": "Classification",
+    "3": "Closed QA",
+    "4": "Code Generation",
+    "5": "Extraction",
+    "6": "Open QA",
+    "7": "Other",
+    "8": "Rewrite",
+    "9": "Summarization",
+    "10": "Text Generation",
+    "11": "Unknown"
+  },
+  "weights_map": {
+    "creativity_scope": [
+      2,
+      1,
+      0
+    ],
+    "reasoning": [
+      0,
+      1
+    ],
+    "contextual_knowledge": [
+      0,
+      1
+    ],
+    "number_of_few_shots": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "domain_knowledge": [
+      3,
+      1,
+      2,
+      0
+    ],
+    "no_label_reason": [
+      0
+    ],
+    "constraint_ct": [
+      1,
+      0
+    ]
+  },
+  "divisor_map": {
+    "creativity_scope": 2,
+    "reasoning": 1,
+    "contextual_knowledge": 1,
+    "number_of_few_shots": 1,
+    "domain_knowledge": 3,
+    "no_label_reason": 1,
+    "constraint_ct": 1
+  },
+  "target_sizes": {
+    "task_type": 12,
+    "creativity_scope": 3,
+    "reasoning": 2,
+    "contextual_knowledge": 2,
+    "number_of_few_shots": 6,
+    "domain_knowledge": 4,
+    "no_label_reason": 1,
+    "constraint_ct": 2
+  },
+  "output_names": [
+    "logits_task_type",
+    "logits_creativity_scope",
+    "logits_reasoning",
+    "logits_contextual_knowledge",
+    "logits_few_shots",
+    "logits_domain_knowledge",
+    "logits_no_label_reason",
+    "logits_constraint_ct"
+  ]
+}

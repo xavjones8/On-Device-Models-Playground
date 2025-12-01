@@ -1,0 +1,42 @@
+{
+  "Inputs" : {
+    "attention_mask" : {
+      "MLFeatureShortDescription" : "--"
+    },
+    "input_ids" : {
+      "MLFeatureShortDescription" : "--"
+    }
+  },
+  "Outputs" : {
+    "logits_contextual_knowledge" : {
+      "MLFeatureShortDescription" : "--"
+    },
+    "logits_no_label_reason" : {
+      "MLFeatureShortDescription" : "--"
+    },
+    "logits_few_shots" : {
+      "MLFeatureShortDescription" : "--"
+    },
+    "logits_creativity_scope" : {
+      "MLFeatureShortDescription" : "--"
+    },
+    "logits_task_type" : {
+      "MLFeatureShortDescription" : "--"
+    },
+    "logits_reasoning" : {
+      "MLFeatureShortDescription" : "--"
+    },
+    "logits_domain_knowledge" : {
+      "MLFeatureShortDescription" : "--"
+    },
+    "logits_constraint_ct" : {
+      "MLFeatureShortDescription" : "--"
+    }
+  },
+  "TrainingInputs" : {
+
+  },
+  "States" : {
+
+  }
+}

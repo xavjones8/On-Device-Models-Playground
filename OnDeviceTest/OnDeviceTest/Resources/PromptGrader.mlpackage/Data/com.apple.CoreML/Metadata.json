@@ -1,0 +1,12 @@
+{
+  "MLModelVersionStringKey" : "--",
+  "MLModelDescriptionKey" : "Returns raw logits for 8 complexity tasks. Post-processing required.",
+  "MLModelCreatorDefinedKey" : {
+    "com.github.apple.coremltools.conversion_date" : "2025-11-30",
+    "com.github.apple.coremltools.source" : "torch==2.9.1",
+    "com.github.apple.coremltools.version" : "9.0",
+    "com.github.apple.coremltools.source_dialect" : "TorchScript"
+  },
+  "MLModelAuthorKey" : "Nvidia \/ User",
+  "MLModelLicenseKey" : "--"
+}

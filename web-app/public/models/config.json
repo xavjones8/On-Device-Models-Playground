@@ -1,0 +1,196 @@
+{
+  "base_model": "microsoft/DeBERTa-v3-base",
+  "bos_token_id": 1026,
+  "config_path": null,
+  "constraint_ct_map": {
+    "1.0": 0,
+    "Unknown": 1
+  },
+  "contextual_knowledge_map": {
+    "No": 0,
+    "Unknown": -1,
+    "Yes": 1
+  },
+  "creativity_score_map": {
+    "High": 0,
+    "Low": 1,
+    "No": 2
+  },
+  "decoder_config": {
+    "cross_head_dim": 128,
+    "cross_hidden_size": 1024,
+    "cross_num_attention_heads": 16,
+    "cross_num_key_value_heads": 16,
+    "head_dim": 128,
+    "hidden_act": "silu",
+    "hidden_size": 2048,
+    "initializer_range": 0.02,
+    "intermediate_size": 8192,
+    "max_position_embeddings": 3072,
+    "model_type": "dia_decoder",
+    "norm_eps": 1e-05,
+    "num_attention_heads": 16,
+    "num_channels": 9,
+    "num_hidden_layers": 18,
+    "num_key_value_heads": 4,
+    "rope_scaling": null,
+    "rope_theta": 10000.0,
+    "use_cache": true,
+    "vocab_size": 1028
+  },
+  "delay_pattern": [
+    0,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+  ],
+  "divisor_map": {
+    "constraint_ct": 1,
+    "contextual_knowledge": 1,
+    "creativity_scope": 2,
+    "domain_knowledge": 3,
+    "no_label_reason": 1,
+    "number_of_few_shots": 1,
+    "reasoning": 1
+  },
+  "domain_knowledge_map": {
+    "High": 0,
+    "Low": 1,
+    "Medium": 2,
+    "No": 3
+  },
+  "drop_out": false,
+  "encoder_config": {
+    "head_dim": 128,
+    "hidden_act": "silu",
+    "hidden_size": 1024,
+    "initializer_range": 0.02,
+    "intermediate_size": 4096,
+    "max_position_embeddings": 1024,
+    "model_type": "dia_encoder",
+    "norm_eps": 1e-05,
+    "num_attention_heads": 16,
+    "num_hidden_layers": 12,
+    "num_key_value_heads": 16,
+    "rope_scaling": null,
+    "rope_theta": 10000.0,
+    "vocab_size": 256
+  },
+  "eos_token_id": 1024,
+  "fc_dropout": 0.2,
+  "initializer_range": 0.02,
+  "is_encoder_decoder": true,
+  "model_output_type": {
+    "constraint_ct": "numeric",
+    "contextual_knowledge": "numeric",
+    "creativity_scope": "numeric",
+    "domain_knowledge": "numeric",
+    "no_label_reason": "numeric",
+    "number_of_few_shots": "numeric",
+    "prompt_complexity_score": "numeric",
+    "reasoning": "numeric",
+    "task_type_1": "string",
+    "task_type_2": "string",
+    "task_type_prob": "numeric"
+  },
+  "model_type": "dia",
+  "no_label_reason_map": {
+    "Unknown": 0
+  },
+  "norm_eps": 1e-05,
+  "number_of_few_shots_map": {
+    "0.0": 0,
+    "1.0": 1,
+    "2.0": 2,
+    "3.0": 3,
+    "4.0": 4,
+    "5.0": 5
+  },
+  "pad_token_id": 1025,
+  "pretrained": true,
+  "reasoning_map": {
+    "No": 0,
+    "Unknown": -1,
+    "Yes": 1
+  },
+  "target_sizes": {
+    "constraint_ct": 2,
+    "contextual_knowledge": 2,
+    "creativity_scope": 3,
+    "domain_knowledge": 4,
+    "no_label_reason": 1,
+    "number_of_few_shots": 6,
+    "reasoning": 2,
+    "task_type": 12
+  },
+  "targets": [
+    "task_type_1",
+    "task_type_2",
+    "task_type_prob",
+    "creativity_scope",
+    "reasoning",
+    "contextual_knowledge",
+    "number_of_few_shots",
+    "domain_knowledge",
+    "no_label_reason",
+    "constraint_ct",
+    "prompt_complexity_score"
+  ],
+  "task_type_map": {
+    "0": "Brainstorming",
+    "1": "Chatbot",
+    "10": "Text Generation",
+    "11": "Unknown",
+    "2": "Classification",
+    "3": "Closed QA",
+    "4": "Code Generation",
+    "5": "Extraction",
+    "6": "Open QA",
+    "7": "Other",
+    "8": "Rewrite",
+    "9": "Summarization"
+  },
+  "transformers_version": "4.57.3",
+  "use_cache": true,
+  "weights_map": {
+    "constraint_ct": [
+      1,
+      0
+    ],
+    "contextual_knowledge": [
+      0,
+      1
+    ],
+    "creativity_scope": [
+      2,
+      1,
+      0
+    ],
+    "domain_knowledge": [
+      3,
+      1,
+      2,
+      0
+    ],
+    "no_label_reason": [
+      0
+    ],
+    "number_of_few_shots": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "reasoning": [
+      0,
+      1
+    ]
+  }
+}
